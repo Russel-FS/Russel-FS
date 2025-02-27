@@ -15,7 +15,7 @@
 </div>
 <ul style="list-style: none; padding: 0; font-family: 'Segoe UI', sans-serif; font-size: 1.1em; line-height: 1.6;">
   <li>🎯 <strong>Pasión:</strong> Desarrollo de software, diseño creativo y proyectos innovadores.</li>
-  <li>🌱 <strong>Actualmente aprendiendo:</strong> <span style="color: #36BCF7;">Netx js</span> y metodologías DevOps.</li>
+  <li>🌱 <strong>Actualmente aprendiendo:</strong> <span style="color: #36BCF7;">Spring Boot</span> y metodologías DevOps.</li>
   <li>💬 <strong>¿Por qué colaborar conmigo?</strong> Soy un solucionador de problemas con un enfoque creativo.</li>
 </ul>
 
