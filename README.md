@@ -7,7 +7,7 @@
     Apasionado por crear soluciones tecnológicas que transformen el mundo <span style="font-size: 1.5em;">🌍</span>
    </p>
 </div>
-
+ 
 <hr style="border: 0; height: 1px; background: linear-gradient(to right, #e0e0e0, #36BCF7, #e0e0e0);">
 
 <div align="center" style="margin: 60px 0;">
