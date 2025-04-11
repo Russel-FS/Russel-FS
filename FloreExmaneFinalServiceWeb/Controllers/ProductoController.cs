@@ -1,6 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using FloreExmaneFinalServiceWeb.Models;
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
+using ClosedXML.Excel;
 
 namespace FloreExmaneFinalServiceWeb.Controllers
 {
@@ -116,6 +120,109 @@ namespace FloreExmaneFinalServiceWeb.Controllers
                 }
             }
             return Ok(new { message = "Producto eliminado exitosamente" });
+        }
+
+        [HttpGet("reporte-pdf/{id}")]
+        public IActionResult GenerarReportePDF(int id)
+        {
+            var reporte = ObtenerDatosReporte(id);
+            if (reporte == null)
+                return NotFound(new { message = "Producto no encontrado" });
+
+            using (var memoryStream = new MemoryStream())
+            {
+                var writer = new PdfWriter(memoryStream);
+                var pdf = new PdfDocument(writer);
+                var document = new Document(pdf);
+
+                document.Add(new Paragraph($"Reporte de Producto - {reporte.Nombre}"));
+                document.Add(new Paragraph($"Código: {reporte.Codigo}"));
+                document.Add(new Paragraph($"Precio Unitario: {reporte.PrecioUnitario:C}"));
+                document.Add(new Paragraph($"Stock Actual: {reporte.StockActual}"));
+                document.Add(new Paragraph($"Cantidad Vendida: {reporte.CantidadVendida}"));
+                document.Add(new Paragraph($"Total Ventas: {reporte.TotalVentas:C}"));
+
+                document.Close();
+
+                return File(memoryStream.ToArray(), "application/pdf", $"ReporteProducto_{id}.pdf");
+            }
+        }
+
+        [HttpGet("reporte-excel/{id}")]
+        public IActionResult GenerarReporteExcel(int id)
+        {
+            var reporte = ObtenerDatosReporte(id);
+            if (reporte == null)
+                return NotFound(new { message = "Producto no encontrado" });
+
+            using (var workbook = new XLWorkbook())
+            {
+                var worksheet = workbook.Worksheets.Add("Reporte Producto");
+                
+                worksheet.Cell("A1").Value = "Código";
+                worksheet.Cell("B1").Value = "Nombre";
+                worksheet.Cell("C1").Value = "Precio Unitario";
+                worksheet.Cell("D1").Value = "Stock Actual";
+                worksheet.Cell("E1").Value = "Cantidad Vendida";
+                worksheet.Cell("F1").Value = "Total Ventas";
+
+                worksheet.Cell("A2").Value = reporte.Codigo;
+                worksheet.Cell("B2").Value = reporte.Nombre;
+                worksheet.Cell("C2").Value = reporte.PrecioUnitario;
+                worksheet.Cell("D2").Value = reporte.StockActual;
+                worksheet.Cell("E2").Value = reporte.CantidadVendida;
+                worksheet.Cell("F2").Value = reporte.TotalVentas;
+
+                using (var memoryStream = new MemoryStream())
+                {
+                    workbook.SaveAs(memoryStream);
+                    return File(memoryStream.ToArray(), 
+                        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                        $"ReporteProducto_{id}.xlsx");
+                }
+            }
+        }
+
+        private ReporteProductoDTO ObtenerDatosReporte(int id)
+        {
+            ReporteProductoDTO reporte = null;
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+                var sql = @"
+                    SELECT 
+                        p.Codigo,
+                        p.Nombre,
+                        p.PrecioUnitario,
+                        p.Stock as StockActual,
+                        ISNULL(SUM(d.Cantidad), 0) as CantidadVendida,
+                        ISNULL(SUM(d.Subtotal), 0) as TotalVentas
+                    FROM Producto p
+                    LEFT JOIN DetalleOrdenCompra d ON p.ProductoID = d.ProductoID
+                    WHERE p.ProductoID = @ProductoID AND p.Activo = 1
+                    GROUP BY p.Codigo, p.Nombre, p.PrecioUnitario, p.Stock";
+
+                using (var command = new SqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@ProductoID", id);
+                    using (var reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            reporte = new ReporteProductoDTO
+                            {
+                                Codigo = reader.GetString(0),
+                                Nombre = reader.GetString(1),
+                                PrecioUnitario = reader.GetDecimal(2),
+                                StockActual = reader.GetInt32(3),
+                                CantidadVendida = reader.GetInt32(4),
+                                TotalVentas = reader.GetDecimal(5)
+                            };
+                        }
+                    }
+                }
+            }
+            return reporte;
         }
     }
 }
