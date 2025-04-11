@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FloreExmaneFinalServiceWeb")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+631ac10dbc19f07aa21eec9e879e619196bc5d96")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3bf8d07b0ef16569ba294116de87d8220a1fcf4")]
 [assembly: System.Reflection.AssemblyProductAttribute("FloreExmaneFinalServiceWeb")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FloreExmaneFinalServiceWeb")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
