@@ -1,0 +1,6 @@
+@FloreExmaneFinalServiceWeb_HostAddress = http://localhost:5201
+
+GET {{FloreExmaneFinalServiceWeb_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
