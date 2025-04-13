@@ -4,7 +4,7 @@
   </h1>
   <img src="https://github.com/Corvussel/Corvussel/blob/main/github-header-image%20(1).png?raw=true" alt="Banner" style="max-height: 300px; width: auto; border-radius: 15px; box-shadow: 0 8px 16px rgba(0,0,0,0.15); margin-top: 20px;"> 
   <p style="font-family: 'Roboto', sans-serif; font-size: 1.2em; max-width: 600px; margin: 20px auto;">
-    Apasionado por crear soluciones tecnológicas que transformen el mundo <span style="font-size: 1.5em;">🌍</span>
+     Apasionado por crear soluciones tecnológicas que transformen el mundo <span style="font-size: 1.5em;">🌍</span>
    </p>
 </div>
  
