@@ -62,13 +62,15 @@ Desarrollador de software con experiencia end-to-end: desde el diseño de arquit
 
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=Russel-FS&show_icons=true&theme=github_dark&hide_border=true&count_private=true&locale=es&cache_seconds=1800" />
+![Followers](https://img.shields.io/github/followers/Russel-FS?style=flat-square&logo=github&label=Followers&color=1f6feb&labelColor=0d1117)
 &nbsp;
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Russel-FS&layout=compact&hide_border=true&theme=github_dark&locale=es&cache_seconds=1800" />
+![Stars](https://img.shields.io/github/stars/Russel-FS?style=flat-square&logo=github&label=Stars&color=f0e68c&labelColor=0d1117)
+&nbsp;
+![Profile Views](https://komarev.com/ghpvc/?username=Russel-FS&style=flat-square&color=1f6feb&label=Profile+Views&base=500)
 
 <br><br>
 
-![Streak](https://streak-stats.demolab.com/?user=Russel-FS&hide_border=true&theme=github-dark-blue&locale=es)
+[![Streak](https://streak-stats.demolab.com/?user=Russel-FS&hide_border=true&theme=github-dark-blue&locale=es)](https://git.io/streak-stats)
 
 <br>
 
