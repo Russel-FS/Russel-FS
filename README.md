@@ -62,17 +62,17 @@ Desarrollador de software con experiencia end-to-end: desde el diseño de arquit
 
 <div align="center">
 
-<img height="155" src="https://github-readme-stats.vercel.app/api?username=Russel-FS&show_icons=true&theme=default&hide_border=true&count_private=true&locale=es" />
+<img height="160" src="https://github-readme-stats.vercel.app/api?username=Russel-FS&show_icons=true&theme=github_dark&hide_border=true&count_private=true&locale=es&cache_seconds=1800" />
 &nbsp;
-<img height="155" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Russel-FS&layout=compact&hide_border=true&theme=default&locale=es" />
+<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Russel-FS&layout=compact&hide_border=true&theme=github_dark&locale=es&cache_seconds=1800" />
 
 <br><br>
 
-![Streak](https://github-readme-streak-stats.herokuapp.com/?user=Russel-FS&hide_border=true&theme=default&locale=es)
+![Streak](https://streak-stats.demolab.com/?user=Russel-FS&hide_border=true&theme=github-dark-blue&locale=es)
 
 <br>
 
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Russel-FS&hide_border=true&theme=minimal&area=true)
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Russel-FS&hide_border=true&theme=react-dark&area=true)
 
 </div>
 
