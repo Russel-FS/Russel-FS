@@ -54,33 +54,7 @@ efficient, maintainable, and high-performance digital solutions.
 
 <div align="center">
 
-### GitHub Statistics
-
-<br>
-
-<img
-  src="https://github-stats-extended.vercel.app/api?username=Russel-FS&show_icons=true&theme=github_dark&hide_border=true"
-  alt="GitHub Statistics"
-  width="440"
-/>
-
-<br>
-
-<img
-  src="https://github-stats-extended.vercel.app/api/top-langs/?username=Russel-FS&layout=compact&langs_count=8&theme=github_dark&hide_border=true"
-  alt="Most Used Languages"
-  width="440"
-/>
-
-<br>
-
-</div>
-
----
-
-<div align="center">
-
-### Contribution Streak
+### GitHub Contributions
 
 <br>
 
