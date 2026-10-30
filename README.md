@@ -4,6 +4,7 @@
 <br>
 
 # Russel
+
 **Software Developer & IT Consultant**
 
 <br>
@@ -24,6 +25,10 @@ efficient, maintainable, and high-performance digital solutions.
 
 <div align="center">
 
+### Technologies & Tools
+
+<br>
+
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-239120?style=flat-square&logo=sharp&logoColor=white)
@@ -41,19 +46,33 @@ efficient, maintainable, and high-performance digital solutions.
 ![Docker](https://img.shields.io/badge/Docker-0db7ed?style=flat-square&logo=docker&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05033?style=flat-square&logo=git&logoColor=white)
 
+<br>
+
 </div>
 
 ---
 
 <div align="center">
 
-### GitHub Activity
-
-[![GitHub Streak](https://streak-stats.demolab.com?user=Russel-FS&hide_border=true&theme=github-dark-blue&locale=en)](https://git.io/streak-stats)
+### GitHub Statistics
 
 <br>
 
-[![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Russel-FS&theme=react-dark&area=true&hide_border=true&custom_title=Contribution%20Activity)](https://github.com/Ashutosh00710/github-readme-activity-graph)
+<img
+  src="https://github-stats-extended.vercel.app/api?username=Russel-FS&show_icons=true&theme=github_dark&hide_border=true"
+  alt="GitHub Statistics"
+  width="440"
+/>
+
+<br>
+
+<img
+  src="https://github-stats-extended.vercel.app/api/top-langs/?username=Russel-FS&layout=compact&langs_count=8&theme=github_dark&hide_border=true"
+  alt="Most Used Languages"
+  width="440"
+/>
+
+<br>
 
 </div>
 
@@ -61,9 +80,40 @@ efficient, maintainable, and high-performance digital solutions.
 
 <div align="center">
 
-<sub>
-<a href="https://github.com/Russel-FS">GitHub</a> •
-<a href="mailto:russelfloressolano7083@gmail.com">Contact Me</a>
-</sub>
+### Contribution Streak
+
+<br>
+
+<a href="https://git.io/streak-stats">
+  <img
+    src="https://streak-stats.demolab.com?user=Russel-FS&theme=github-dark-blue&hide_border=true&locale=en"
+    alt="GitHub Contribution Streak"
+  />
+</a>
+
+<br>
+
+</div>
+
+---
+
+<div align="center">
+
+### Connect With Me
+
+<br>
+
+<a href="https://github.com/Russel-FS">
+  <img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub"/>
+</a>
+
+<a href="mailto:russelfloressolano7083@gmail.com">
+  <img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+
+<br>
+<br>
+
+<sub>Building scalable solutions through clean architecture and thoughtful engineering.</sub>
 
 </div>
